@@ -1,0 +1,10 @@
+from roboflow import Roboflow
+rf = Roboflow(api_key="tbbgGe9VRf7m0upA9Cor")
+project = rf.workspace("fruitclassification-dqola").project("fruitclassification-jx6nu")
+dataset = project.version(1).download("yolov5")
+
+#################################
+https://universe.roboflow.com/fruitclassification-dqola/fruitclassification-jx6nu/dataset/1#
+#################################
+
+!python train.py --img 640 --batch 16 --epochs 50 --data {dataset.location}/data.yaml --weights yolov5s.pt --cache

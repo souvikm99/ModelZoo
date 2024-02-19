@@ -1,0 +1,25 @@
+names:
+- Orange_Bad
+- Orange_Good
+- Pomegranate_Bad
+- Pomegranate_Good
+- apple_bad
+- apple_good
+- banana_bad
+- banana_good
+- fruits
+- guaba_good
+- guava_bad
+- guava_good
+- lime_bad
+- lime_good
+nc: 14
+roboflow:
+  license: CC BY 4.0
+  project: fruitclassification-jx6nu
+  url: https://universe.roboflow.com/fruitclassification-dqola/fruitclassification-jx6nu/dataset/1
+  version: 1
+  workspace: fruitclassification-dqola
+test: ../test/images
+train: FruitClassification-1/train/images
+val: FruitClassification-1/valid/images
